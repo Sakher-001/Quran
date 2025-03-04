@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: "Almarai", serif;
+}
+:root {
+    /* Light Mode Colors */
+    --light-primary-bg: #FFFFFF; /* White background */
+    --light-secondary-bg: #F5F5DC; /* Beige background */
+    --light-text: #000000; /* Black text */
+    --light-secondary-text: #333333; /* Dark gray for secondary text */
+    --light-accent: #1A5D1A; /* Dark green for accents */
+    --light-highlight: #D4AF37; /* Gold for highlights */
+    /* Dark Mode Colors */
+    --dark-primary-bg: #1E1E1E; /* Dark gray background */
+    --dark-secondary-bg: #000080; /* Navy blue background */
+    --dark-text: #F5F5DC; /* Light beige text */
+    --dark-secondary-text: #90EE90; /* Light green for secondary text */
+    --dark-accent: #D4AF37; /* Gold for accents */
+    --dark-highlight: #90EE90; /* Light green for highlights */
+    /* Universal Colors */
+    --primary-green: #1A5D1A; /* Dark green */
+    --primary-gold: #D4AF37; /* Gold */
+    --primary-beige: #F5F5DC; /* Beige */
+    --primary-navy: #000080; /* Navy blue */
+    --primary-gray: #F0F0F0; /* Light gray */
+    --primary-maroon: #800000; /* Maroon */
+}
+body {
+    background-color: var(--light-primary-bg);
+    color: var(--light-text);
+}
+.dark-mode {
+    background-color: var(--dark-primary-bg);
+    color: var(--dark-text);
+}
+header{
+    background: var(--light-accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    box-shadow: 0px 0px 20px  1px var(--light-secondary-bg);
+}
+header h1 {
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 0 5px;
+    cursor: pointer;
+    color: var(--light-text);
+    font-weight: 600;
+    transition: 0.3s all ease;
+}
+header nav a:hover{
+    color: var(--dark-highlight);
+    text-decoration:underline;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.islamic-box {
+    background-color: #ffffff; /* White background for the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2ca4ab; /* Islamic teal for the title */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #228b22; /* Islamic green for the subtitle */
+    margin-bottom: 20px;
+}
+
+.surah-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.surah-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e8f0f2; /* Light teal background for Surah items */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #2ca4ab; /* Islamic teal border */
+}
+
+.surah-item:hover {
+  background-color: #cde8e8; /* Lighter teal on hover */
+}
+
+.surah-number {
+    font-weight: bold;
+    color: #d4af37; /* Gold color for Surah numbers */
+}
+
+.surah-title {
+    flex-grow: 1;
+    margin: 0 10px;
+    text-align: right;
+  color: #2c3e50; /* Dark text color */
+}
+
+.ayat-count {
+    font-weight: bold;
+    color: #228b22; /* Islamic green for Ayat count */
+}
+.creative{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 100px;
+    background: var(--light-primary-bg);
+    color: var(--dark-primary-bg);
+    position: absolute;
+    left: 12px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 3px var(--dark-primary-bg);
+    transition: 0.3s all ease;
+}
+.creative a{
+text-align: center;
+padding-top: 12px;
+}
+.creative p:hover{
+    color: #000080;
+    text-decoration: underline;
+}
+.hide{
+    display: none;
+}
